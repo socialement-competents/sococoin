@@ -1,16 +1,16 @@
 pragma solidity ^0.4.21;
 
-import "./OwnableERC20.sol";
+import "./WhitelistERC20.sol";
 
-contract SocoCoin is OwnableTokenERC20 {
-    constructor () OwnableTokenERC20(
+contract SocoCoin is WhitelistTokenERC20 {
+    constructor () WhitelistTokenERC20(
         0,
         "SocoCoin",
         "SOCO"
     ) public {}
 
     // Mint tokens
-    function reward(address _target, uint256 amount) public onlyOwner {
+    function reward(address _target, uint256 amount) public onlyWhitelist {
         // Mint some tokens out of thin air
         balanceOf[_target] += amount;
         // Update the total supply
@@ -20,6 +20,7 @@ contract SocoCoin is OwnableTokenERC20 {
         emit Transfer(owner, _target, amount);
     }
 
+    // Get your reward
     function claimReward(uint256 amount) public {
         balanceOf[msg.sender] += amount;
         totalSupply += amount;

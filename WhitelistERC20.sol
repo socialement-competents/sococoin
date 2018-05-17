@@ -1,10 +1,10 @@
 pragma solidity ^0.4.21;
 
-import "./Ownable.sol";
+import "./Whitelist.sol";
 
 interface tokenRecipient { function receiveApproval(address _from, uint256 _value, address _token, bytes _extraData) external; }
 
-contract OwnableTokenERC20 is Ownable {
+contract WhitelistTokenERC20 is Whitelist {
     string public name;
     string public symbol;
     uint8 public decimals = 18;

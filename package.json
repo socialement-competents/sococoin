@@ -11,6 +11,6 @@
     "solc": "^0.4.24"
   },
   "scripts": {
-    "abi": "solcjs --abi --overwrite -o abi/ Ownable.sol OwnableERC20.sol SocoCoin.sol"
+    "abi": "solcjs --abi --overwrite -o abi/ Ownable.sol Whitelist.sol WhitelistERC20.sol SocoCoin.sol"
   }
 }
