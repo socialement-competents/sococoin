@@ -21,16 +21,16 @@ au fait des nouvelles technologies en général et du web en particulier.
 
 **Utilisateur** :
 Utilisateur de la plateforme, qui va se connecter par exemple
-par l'intérmédiaire d'une borne PILA.
+par l'intermédiaire d'une borne PILA.
 Connecté sur 
 
 **Opérateur** :
-Personne à l'aise avec les nouvelles techonologies qui va aider, grâce à la
-platerforme Socoperator, des personnes en difficulté, par chat.
+Personne à l'aise avec les nouvelles technologies qui va aider, grâce à la
+plateforme Socoperator, des personnes en difficulté, par chat.
 
 **Organisme** :
 Entreprise, institution publique, ONG ou même simple développeur qui installe
-le socomodule sur son site web.
+le Socomodule sur son site web.
 
 ## Attribution de tokens
 
@@ -87,7 +87,7 @@ lors d'une version de production de l'application.
 
 Tout d'abord, il faudra récompenser au mieux les opérateurs, en favorisant
 les comportements positifs et en diminuant les récompenses lors de comportements
-négatifs. Cela demandera une étude et une refléxion en profondeur, car il est
+négatifs. Cela demandera une étude et une réflexion en profondeur, car il est
 facile de détourner un système qui se veut bénéfique en ne "jouant pas le jeu".
 
 Ensuite, la fraude est possible: deux complices peuvent créer un nombre illimité
