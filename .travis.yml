@@ -2,5 +2,7 @@ language: node_js
 node_js:
   - "9"
   - yarn
+before_install:
+  - npm i -g yarn
 install:
   - yarn abi
