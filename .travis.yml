@@ -3,6 +3,6 @@ node_js:
   - "9"
 before_install:
   - npm i -g yarn
-  - yarn
+  - yarn --pure-lockfile --non-interactive
 install:
   - yarn abi
