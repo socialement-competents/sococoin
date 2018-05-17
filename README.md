@@ -68,6 +68,12 @@ N'importe quelle entreprise, ONG, institution ou simple développeur peut inclur
 sur son site web l'intégration Socomodule par un simple copier / coller
 (voir [le CodePen](https://codepen.io/tsauvajon/pen/JvmrEo) d'exemple).
 
+Quelques exemples d'utilisation :
+- Démarches Pôle Emploi
+- Déclarations d'impôts
+- Toute autre démarche administrative
+- Aide à l'utilisation d'un site web
+
 ## Récompenses possibles
 
 Pôle emploi : formations gratuites, mise en avant de CV pour une offre d'emploi ...
