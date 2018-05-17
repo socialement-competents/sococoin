@@ -1,0 +1,16 @@
+{
+  "name": "sococoin",
+  "version": "1.0.0",
+  "description": "SocoCoin ERC20 Token",
+  "main": "index.js",
+  "repository": "https://github.com/socialement-competents/sococoin",
+  "author": "Thomas Sauvajon <thomas.sauvajon.dev@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "solc": "^0.4.24"
+  },
+  "scripts": {
+    "abi": "solcjs --abi --overwrite -o abi/ Ownable.sol OwnableERC20.sol SocoCoin.sol"
+  }
+}
