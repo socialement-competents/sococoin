@@ -17,6 +17,8 @@ au fait des nouvelles technologies en général et du web en particulier.
 
 [Sococoin](https://github.com/socialement-competents/sococoin)
 
+[Socoback](https://github.com/socialement-competents/socoback)
+
 ## Lexique
 
 **Utilisateur** :
