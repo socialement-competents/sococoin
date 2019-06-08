@@ -1,125 +1,139 @@
 # SoCoCoin
 
-Sococoin est un Token Ethereum qui suit la spécification
-[ERC20](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20.md).
+Sococoin is an Ethereum token that follows the
+[ERC20](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20.md) specification.
 
-## Abstrait
+## Abstract
 
-Le but de ce token est de pousser des personnes à l'aise avec les outils informatiques
-à venir en aide, de façon autonome et decentralisée, à des utilisateurs moins
-au fait des nouvelles technologies en général et du web en particulier.
+The SoCo (short for Socialement Compétents = Socially Competent) ecosystem aims
+to push people comfortable with IT and the internet to help, in an autonomous
+and decentralized way, users less aware of new technologies in general and the
+internet in particular.
 
-## Ecosystème
+This was built in 3 days during the 2018 Pôle Emploi (French unemployment
+services) hackaton, where 80 teams had to compete to find the best way to
+help Pôle Emploi applicants to use their website
+(https://www.pole-emploi.fr/accueil/).  
+Our platform wasn't strongly linked with Pôle Emploi and could be used with
+any website, just by important a JavaScript file (our socomodule).
+
+## Ecosystem
 
 [Socomodule](https://github.com/socialement-competents/socomodule)
+is a non intrusive chat module ([Intercom](https://www.intercom.com/)-style)
 
 [Socoperator](https://github.com/socialement-competents/socoperator)
+is a web application used by operators (see below)
 
 [Sococoin](https://github.com/socialement-competents/sococoin)
+is the ERC20 Ethereum Token described in this repository
 
 [Socoback](https://github.com/socialement-competents/socoback)
+is the application back-end that allows communication between the other components
 
-## Lexique
+## Actors
 
-**Utilisateur** :
-Utilisateur de la plateforme, qui va se connecter par exemple
-par l'intermédiaire d'une borne PILA.
-Connecté sur 
+**User**:
+Someone that requires help using the website. He would click on the chat icon
+available on the bottom right of the page, and be connected to the next available
+operator.
 
-**Opérateur** :
-Personne à l'aise avec les nouvelles technologies qui va aider, grâce à la
-plateforme Socoperator, des personnes en difficulté, par chat.
+**Operator**:
+Someone comfortable with new technologies that will help, thanks to the
+Socoperator platform, people in difficulty, by chat.
 
-**Organisme** :
-Entreprise, institution publique, ONG ou même simple développeur qui installe
-le Socomodule sur son site web.
+**Organisation**:
+Company, public institution, NGO or even a single developer that uses the
+socomodule on their website.
 
-## Attribution de tokens
+## Token reward
 
-Des tokens seront attribués à un opérateur après chaque opération d'aide,
-en fonction de plusieurs critères :
-- durée de l'intervention
-- perception par l'utilisateur
-- type d'aide
+Tokens will be rewarded to operators after each help operation, according to
+several criteria:
+- duration of the intervention
+- perception by the user (was the user satisfied?)
+- type of help
 - ...
 
-## Fonctionnement
+## How it works
 
-L'organisme installe le socomodule sur son site web, ce qui va ajouter
-un module de chat non intrusif sur chacune des pages souhaitée.
+The organization installs the socomodule on its website, which will add
+a non-intrusive chat module on each of the desired pages.
 
-Les utilisateurs de ce site auront la possibilité d'ouvrir une conversation,
-afin de demander de l'aide (envoyer un message dans le chat ouvre une conversation).
+Users of this website will have the opportunity to open a conversation,
+to ask for help (by sending a message in the chat).
 
-Tous les opérateurs verront cette nouvelle conversation s'afficher : ils auront
-alors la possibilité de se l'attribuer, simplement en y répondant. Une
-conversation qui est attribuée à un opérateur n'est ni visible ni accessible
-par les autres opérateurs.
+All operators will see this new conversation appear: they will then have
+the opportunity to assign it to themselves, simply by responding. A
+conversation that is assigned to an operator is neither visible nor accessible
+by other operators.
 
-Il faut bien comprendre qu'un seul opérateur, avec un seul compte, peut dialoguer
-avec et aider un utilisateur qui se trouve sur n'importe quelle plateforme web,
-tout en restant sur la même application, Socoperator.
+A single operator, with a single account, can interact with and help a user who
+is on any web platform, while remaining on the same application, Socoperator.
 
-## Organismes ciblés
+## Targeted organisations
 
-L'écosystème Socialement Compétents cible en priorité les institutions publiques.
-Il est particulièrement adapté aux petits organismes (petites mairies, communautés
-des communes etc.) et aux TPE / PME qui n'ont ni les moyens ni la vocation
-d'avoir un service de support informatique dédié.
-N'importe quelle entreprise, ONG, institution ou simple développeur peut inclure
-sur son site web l'intégration Socomodule par un simple copier / coller
-(voir [le CodePen](https://codepen.io/tsauvajon/pen/JvmrEo) d'exemple).
+The Socially Competent Ecosystem focuses on public institutions. It is particularly
+suitable for small organizations (small towns, boroughs...) and small businesses
+that have neither the means nor the wish to have a dedicated IT support service.
+Any company, NGO, institution or simple developer can include the Socomodule
+integration on their website with a simple copy and paste
+(see the [CodePen](https://codepen.io/tsauvajon/pen/JvmrEo) demo).
 
-Quelques exemples d'utilisation :
-- Démarches Pôle Emploi
-- Déclarations d'impôts
-- Toute autre démarche administrative
-- Aide à l'utilisation d'un site web
+Examples of good use cases for end uses:
+- Pôle emploi procedures
+- Tax filing
+- any other administrative procedure
+- help using a website
 
-## Récompenses possibles
+## Available rewards
 
-Pôle emploi : formations gratuites, mise en avant de CV pour une offre d'emploi ...
-Réductions sur les transports en commun (titres individuels ou abonnements)
-Réductions sur la culture (par des subventions publiques)
+Earned SocoCoins could be sold or exchanged or redeemed for non-financial rewards.
+
+A few examples:
+
+Pôle emploi: free training, priviledged access to some job offers...  
+Discount on public transports  
+Discount on cultural events  
 
 ## Challenges
 
-Nous avons identifié un certain nombre de challenges qui seront à prendre en compte
-lors d'une version de production de l'application.
+We have identified a number of challenges that will be taken into account when
+building a production version of the application.
 
-Tout d'abord, il faudra récompenser au mieux les opérateurs, en favorisant
-les comportements positifs et en diminuant les récompenses lors de comportements
-négatifs. Cela demandera une étude et une réflexion en profondeur, car il est
-facile de détourner un système qui se veut bénéfique en ne "jouant pas le jeu".
+First, it will reward the best operators, promoting positive behavior and
+reducing rewards for negative behavior. This will require in-depth study and
+thinking, as it is easy to hijack a system that claims to be beneficial by not
+"playing the game".
 
-Ensuite, la fraude est possible: deux complices peuvent créer un nombre illimité
-de conversations, et les clôturer afin de recevoir des récompenses sans réelle
-valeur ajoutée. Plusieurs leviers peuvent être utilisés pour contrer ce problème :
-vérifier, grâce à une IA, si les messages sont générés par un humain ou une
-machine ; évaluer la durée de l'intervention ; vérifier le rythme des interventions
-pour chaque opérateur ; limiter le nombre de conversations simultanées ...
+Indeed, fraud is possible: two accomplices can create an unlimited number of
+conversations, and close them instantly to receive rewards without real world
+added value. Several levers can be used to counter this problem: check, thanks
+to AI/Machine learning, if the messages are generated by a human or a machine;
+evaluate the duration of the intervention against similar problems; check the
+timing of interventions for each operator; limit the number of simultaneous
+conversations/number of conversations in a day...
 
-Enfin, il faudrait donner la possibilité aux organisations utilisatrices de notre
-suite de certifier ou non des opérateurs. Dans le cas de Pôle Emploi, par exemple,
-Pôle Emploi devrait avoir la possibilité d'autoriser, ou non, un opérateur à
-aider des utilisateurs sur leur plate-forme. Pôle Emploi pourrait proposer une
-formation d'opérateur qui donnerait accès, sur la plateforme "Socoperator", à
-l'aide aux utilisateurs des portails Pôle Emploi.
+Finally, we should give organisations the opportunity to certify operators by
+themselves. In the case of Pôle Emploi, for example, Pôle Emploi should have the
+possibility to authorize, or not, an operator to help users on their platform.
+Pôle Emploi could offer operator training that would provide access, on the
+"Socoperator" platform, to help users of the Pôle Emploi website.
 
-## Evolutions possibles
+## Possible evolutions
 
-Sans rentrer dans les détails :
+Without going into details:
 
-Il serait possible de faire une analyse d'expression de l'utilisateur afin de
-déterminer sa satisfaction, et adapter les récompenses opérateur en conséquence.
-Solution technique possible : modèle TensorFlow entraîné.
+It would be possible to do a user facial expression analysis to determine his
+satisfaction, and adapt the operator rewards accordingly. Possible technical
+solution: trained TensorFlow model.
 
-Il serait également judicieux de stocker le maximum d'informations sur les
-résolutions de problèmes, et d'analyser de façon intelligente les problèmes
-récurrents, les performances des opérateurs, les axes d'amélioration.
-Solution technique possible : une stack BigData classique (Hadoop, MapReduce ...).
+It would also be wise to store as much information as possible about problem
+solving, and intelligently analyze recurring problems, operator performance,
+and areas for improvement. Possible technical solution: a classic BigData stack
+(Hadoop, MapReduce...).
 
-Les opérateurs peuvent facilement être remplacés par un ChatBot. Les récompenses
-peuvent alors être omises, ou distribuées aux propriétaires du ChatBot ...
-Solutions techniques possibles : ChatBot avec arbre décisionnel, ChatBot avec un
-modèle entraîné par une IA.
+Operators can easily be replaced by a ChatBot, in a technical point of view. The
+rewards can then be omitted, or awarded to the ChatBot owners. Possible
+technical solutions: decision tree ChatBot, ChatBot with an AI-driven model.
+
