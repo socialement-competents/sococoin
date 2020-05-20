@@ -15,7 +15,7 @@ services) hackaton, where 80 teams had to compete to find the best way to
 help Pôle Emploi applicants to use their website
 (https://www.pole-emploi.fr/accueil/).  
 Our platform wasn't strongly linked with Pôle Emploi and could be used with
-any website, just by important a JavaScript file (our socomodule).
+any website, just by importing a JavaScript file (our socomodule, see below).
 
 ## Ecosystem
 
